@@ -112,7 +112,7 @@ export default function Home() {
     <div className="space-y-4">
       <h3 className="text-red-500 border-b border-red-500/20 pb-2">05 // Community</h3>
       <div className="flex flex-wrap gap-2">
-        <span className="px-2 py-1 bg-red-950/50 border border-accent-red/90 rounded text-red-500">Member, Integrated Conference (ICON)</span>
+        <span className="px-2 py-1 bg-red-950/50 border border-accent-red/90 rounded text-red-500">Member, Integrated Confederacy (ICON)</span>
       </div>
     </div>
 
