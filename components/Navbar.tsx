@@ -14,6 +14,7 @@ export default function Navbar() {
 
       <div className="max-[700px]:hidden space-x-6 font-mono text-sm">
         <a href="#profile" className="hover:text-accent-green transition-colors">Profile</a>
+        <a href="#projects" className="hover:text-accent-green transition-colors">Projects</a>
       </div>
     </nav>
   );

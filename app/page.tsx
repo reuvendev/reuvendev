@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <main className="max-w-4xl mx-auto px-6 py-12">
+    <main className="max-w-4xl mx-auto px-6 py-12 space-y-16">
       
       <section id="home" className="space-y-8">
         
@@ -36,89 +36,165 @@ export default function Home() {
         {/* Bio Section */}
         <div className="border-l-2 border-accent-blue pl-6 py-2">
           <p className="text-gray-300 leading-relaxed max-w-2xl text-lg">
-            First-year BSIT student based in Baguio City, Philippines. Interested in software and web development, with knowledge of Java, HTML, CSS, JavaScript, and TypeScript. Continuously learning and building projects to improve my skills.
+            BSIT student based in Baguio City, Philippines. Interested in Cybersecurity, Capture-the-Flag competitions, Web Development, Software Development, Cloud Infrastructure (AWS), Networking Fundamentals, and Game Development.
           </p>
         </div>
       </section>
 
-      <section id="profile" className="max-w-4xl mx-auto py-12 px-6 space-y-8">
-  {/* Terminal Command */}
-  <div className="font-mono text-sm text-gray-500">
-    <span className="text-accent-cyan">$</span> cat ./student-profile.json
-  </div>
+      <section id="profile" className="space-y-8">
+        {/* Terminal Command */}
+        <div className="font-mono text-sm text-gray-500">
+          <span className="text-accent-cyan">$</span> cat ./student-profile.json
+        </div>
 
-  <h2 className="text-4xl font-bold text-white tracking-tight">
-    Student <span className="text-accent-blue">Profile</span>
-  </h2>
+        <h2 className="text-4xl font-bold text-white tracking-tight">
+          Student <span className="text-accent-blue">Profile</span>
+        </h2>
 
-  {/* Stats Grid */}
-  <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-    <div className="border border-white/10 bg-white/5 p-4 rounded">
-      <p className="text-xs text-gray-400 uppercase tracking-widest">Status</p>
-      <p className="text-accent-teal font-mono">BSIT Student</p>
-    </div>
-    <div className="border border-white/10 bg-white/5 p-4 rounded">
-      <p className="text-xs text-gray-400 uppercase tracking-widest">Year</p>
-      <p className="text-white font-mono">1st Year</p>
-    </div>
-    <div className="border border-white/10 bg-white/5 p-4 rounded">
-      <p className="text-xs text-gray-400 uppercase tracking-widest">Location</p>
-      <p className="text-white font-mono">Baguio City</p>
-    </div>
-    <div className="border border-white/10 bg-white/5 p-4 rounded">
-      <p className="text-xs text-gray-400 uppercase tracking-widest">Focus</p>
-      <p className="text-accent-amber font-mono">Exploring</p>
-    </div>
-  </div>
+        {/* Stats Grid */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="border border-white/10 bg-white/5 p-4 rounded">
+            <p className="text-xs text-gray-400 uppercase tracking-widest">Status</p>
+            <p className="text-accent-teal font-mono">BSIT Student</p>
+          </div>
+          <div className="border border-white/10 bg-white/5 p-4 rounded">
+            <p className="text-xs text-gray-400 uppercase tracking-widest">Year</p>
+            <p className="text-white font-mono">1st Year</p>
+          </div>
+          <div className="border border-white/10 bg-white/5 p-4 rounded">
+            <p className="text-xs text-gray-400 uppercase tracking-widest">Location</p>
+            <p className="text-white font-mono">Baguio City</p>
+          </div>
+          <div className="border border-white/10 bg-white/5 p-4 rounded">
+            <p className="text-xs text-gray-400 uppercase tracking-widest">Focus</p>
+            <p className="text-accent-amber font-mono">Exploring</p>
+          </div>
+        </div>
 
-  {/* Skills Matrix - Tailored for a 1st Year */}
-  <div className="grid md:grid-cols-2 gap-8 font-mono text-sm">
-    
-    <div className="space-y-4">
-      <h3 className="text-red-500 border-b border-red-500/30 pb-2">01 // Languages</h3>
-      <div className="flex flex-wrap gap-2">
-        <span className="px-2 py-1 bg-red-950/50 border border-accent-red/90 rounded text-red-500">Java</span>
-      </div>
-    </div>
+        {/* Skills Matrix */}
+        <div className="grid md:grid-cols-2 gap-8 font-mono text-sm">
+          
+          <div className="space-y-4">
+            <h3 className="text-red-500 border-b border-red-500/30 pb-2">01 // Languages</h3>
+            <div className="flex flex-wrap gap-2">
+              <span className="px-2 py-1 bg-red-950/50 border border-red-500/30 rounded text-red-500">Java</span>
+              <span className="px-2 py-1 bg-red-950/50 border border-red-500/30 rounded text-red-500">C++</span>
+            </div>
+          </div>
 
-    <div className="space-y-4">
-      <h3 className="text-yellow-500 border-b border-yellow-500/30 pb-2">02 // Currently Learning</h3>
-      <div className="flex flex-wrap gap-2">
-        <span className="px-2 py-1 bg-yellow-950/50 border border-accent-yellow/90 rounded text-yellow-500">Java</span>
-        <span className="px-2 py-1 bg-yellow-950/50 border border-accent-yellow/90 rounded text-yellow-500">UI Design</span>
-        <span className="px-2 py-1 bg-yellow-950/50 border border-accent-yellow/90 rounded text-yellow-500">Typescript</span>
-      </div>
-    </div>
+          <div className="space-y-4">
+            <h3 className="text-yellow-500 border-b border-yellow-500/30 pb-2">02 // Currently Learning</h3>
+            <div className="flex flex-wrap gap-2">
+              <span className="px-2 py-1 bg-yellow-950/50 border border-yellow-500/30 rounded text-yellow-500">Java</span>
+              <span className="px-2 py-1 bg-yellow-950/50 border border-yellow-500/30 rounded text-yellow-500">C++</span>
+              <span className="px-2 py-1 bg-yellow-950/50 border border-yellow-500/30 rounded text-yellow-500">UI Design</span>
+              <span className="px-2 py-1 bg-yellow-950/50 border border-yellow-500/30 rounded text-yellow-500">Cybersecurity</span>
+            </div>
+          </div>
 
-    <div className="space-y-4">
-      <h3 className="text-green-500 border-b  border-green-500/30 pb-2">03 // Tools</h3>
-      <div className="flex flex-wrap gap-2">
-        <span className="px-2 py-1 bg-green-950/50 border border-accent-green/90 rounded text-green-500">VS Code</span>
-        <span className="px-2 py-1 bg-green-950/50 border border-accent-green/90 rounded text-green-500">Git & GitHub</span>
-        <span className="px-2 py-1 bg-green-950/50 border border-accent-green/90 rounded text-green-500">Figma</span>
-      </div>
-    </div>
+          <div className="space-y-4">
+            <h3 className="text-green-500 border-b border-green-500/30 pb-2">03 // Tools</h3>
+            <div className="flex flex-wrap gap-2">
+              <span className="px-2 py-1 bg-green-950/50 border border-green-500/30 rounded text-green-500">VS Code</span>
+              <span className="px-2 py-1 bg-green-950/50 border border-green-500/30 rounded text-green-500">Git & GitHub</span>
+              <span className="px-2 py-1 bg-green-950/50 border border-green-500/30 rounded text-green-500">Figma</span>
+              <span className="px-2 py-1 bg-green-950/50 border border-green-500/30 rounded text-green-500">Vercel</span>
+            </div>
+          </div>
 
-    <div className="space-y-4">
-      <h3 className="text-blue-500 border-b  border-blue-500/30 pb-2">04 // Interests</h3>
-      <div className="flex flex-wrap gap-2">
-        <span className="px-2 py-1 bg-blue-950/50 border border-accent-blue/90 rounded text-blue-500">Web Systems</span>
-        <span className="px-2 py-1 bg-blue-950/50 border border-accent-blue/90 rounded text-blue-500">Game Engines</span>
-        <span className="px-2 py-1 bg-blue-950/50 border border-accent-blue/90 rounded text-blue-500">Cybersecurity</span>
-        <span className="px-2 py-1 bg-blue-950/50 border border-accent-blue/90 rounded text-blue-500">Cloud Infrastructure (AWS)</span>
-      </div>
-    </div>
+          <div className="space-y-4">
+            <h3 className="text-blue-500 border-b border-blue-500/30 pb-2">04 // Interests</h3>
+            <div className="flex flex-wrap gap-2">
+              <span className="px-2 py-1 bg-blue-950/50 border border-blue-500/30 rounded text-blue-500">Cybersecurity</span>
+              <span className="px-2 py-1 bg-blue-950/50 border border-blue-500/30 rounded text-blue-500">Capture-the-Flag competitions</span>
+              <span className="px-2 py-1 bg-blue-950/50 border border-blue-500/30 rounded text-blue-500">Web Development</span>
+              <span className="px-2 py-1 bg-blue-950/50 border border-blue-500/30 rounded text-blue-500">Software Development</span>
+              <span className="px-2 py-1 bg-blue-950/50 border border-blue-500/30 rounded text-blue-500">Game Development</span>
+              <span className="px-2 py-1 bg-blue-950/50 border border-blue-500/30 rounded text-blue-500">Cloud Infrastructure (AWS)</span>
+            </div>
+          </div>
 
-    <div className="space-y-4">
-      <h3 className="text-red-500 border-b border-red-500/20 pb-2">05 // Community</h3>
-      <div className="flex flex-wrap gap-2">
-        <span className="px-2 py-1 bg-red-950/50 border border-accent-red/90 rounded text-red-500">Member, Integrated Confederacy (ICON)</span>
-      </div>
-    </div>
+          <div className="space-y-4 md:col-span-2">
+            <h3 className="text-red-500 border-b border-red-500/20 pb-2">05 // Community</h3>
+            <div className="flex flex-wrap gap-2">
+              <span className="px-2 py-1 bg-red-950/50 border border-red-500/30 rounded text-red-500">Member, Integrated Confederacy (ICON)</span>
+            </div>
+          </div>
 
-  </div>
-</section>
+        </div>
+      </section>
 
+      {/* Projects Section */}
+      <section id="projects" className="space-y-8">
+        <div className="font-mono text-sm text-gray-500">
+          <span className="text-accent-cyan">$</span> ls -la ./projects
+        </div>
+
+        <h2 className="text-4xl font-bold text-white tracking-tight">
+          Current <span className="text-accent-cyan">Projects</span>
+        </h2>
+
+        <div className="grid md:grid-cols-2 gap-4">
+          
+          <div className="p-5 bg-white/5 border border-white/10 rounded-lg flex flex-col justify-between space-y-4 hover:border-cyan-500/50 transition-colors">
+            <div className="space-y-2">
+              <h3 className="text-xl font-bold text-white">WaterWatch – Smart Water Level Monitoring</h3>
+              <p className="text-sm text-cyan-400 font-mono">Status: Completed / Hardware</p>
+              <p className="text-gray-400 text-sm leading-relaxed pt-1">
+                Developed an automated water tank monitoring system with real-time level detection and automatic pump control.
+              </p>
+              <div className="flex flex-wrap gap-2 pt-2 font-mono text-xs">
+                <span className="px-2 py-1 bg-black/30 rounded text-gray-300">Arduino Uno</span>
+                <span className="px-2 py-1 bg-black/30 rounded text-gray-300">C++</span>
+                <span className="px-2 py-1 bg-black/30 rounded text-gray-300">HC-SR04</span>
+                <span className="px-2 py-1 bg-black/30 rounded text-gray-300">Relay</span>
+                <span className="px-2 py-1 bg-black/30 rounded text-gray-300">LCD I2C</span>
+              </div>
+            </div>
+            <div className="pt-2">
+              <a 
+                href="https://cdn.reuvendev.site/file/reuvendev/PDF/Projects/WaterWatch+Project+Document.pdf" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-block w-full text-center font-mono text-xs text-cyan-400 hover:text-white border border-cyan-500/40 bg-cyan-950/30 hover:bg-cyan-900/50 py-2 rounded transition-colors"
+              >
+                [ View Project Document (.PDF) ]
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      {/* Certificates Section (Commented Out) 
+      <section id="certificates" className="space-y-6">
+        <div className="font-mono text-sm text-gray-500">
+          <span className="text-accent-cyan">$</span> cat ./certificates.log
+        </div>
+
+        <h2 className="text-4xl font-bold text-white tracking-tight">
+          Certificates & <span className="text-purple-400">Credentials</span>
+        </h2>
+
+        <div className="grid gap-3 font-mono text-sm">
+          <div className="p-4 bg-purple-950/20 border border-purple-500/30 rounded-lg flex flex-col md:flex-row justify-between items-start md:items-center gap-2">
+            <div>
+              <p className="text-purple-300 font-semibold">Introduction to Cybersecurity</p>
+              <p className="text-xs text-gray-400">Cisco</p>
+            </div>
+            <span className="text-xs px-2 py-1 bg-purple-900/40 border border-purple-500/40 rounded text-purple-300">2026</span>
+          </div>
+
+          <div className="p-4 bg-purple-950/20 border border-purple-500/30 rounded-lg flex flex-col md:flex-row justify-between items-start md:items-center gap-2">
+            <div>
+              <p className="text-purple-300 font-semibold">Ethical Hacker</p>
+              <p className="text-xs text-gray-400">Cisco</p>
+            </div>
+            <span className="text-xs px-2 py-1 bg-purple-900/40 border border-purple-500/40 rounded text-purple-300">2026</span>
+          </div>
+        </div>
+      </section> */}
+      
     </main>
   );
 }
