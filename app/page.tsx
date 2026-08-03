@@ -13,7 +13,7 @@ export default function Home() {
             Reuven Jimenez
           </h1>
           <div className="leading-relaxed max-w-2xl text-md">
-            <p className="text-gray-700">//<b className="text-cyan-500"> IT Freshman</b></p>
+            <p className="text-gray-700">//<b className="text-cyan-500"> BSIT Sophomore</b></p>
           </div>
 
           <div className="flex flex-wrap gap-5 font-mono text-sm">
@@ -59,7 +59,7 @@ export default function Home() {
           </div>
           <div className="border border-white/10 bg-white/5 p-4 rounded">
             <p className="text-xs text-gray-400 uppercase tracking-widest">Year</p>
-            <p className="text-white font-mono">1st Year</p>
+            <p className="text-white font-mono">2nd Year</p>
           </div>
           <div className="border border-white/10 bg-white/5 p-4 rounded">
             <p className="text-xs text-gray-400 uppercase tracking-widest">Location</p>
