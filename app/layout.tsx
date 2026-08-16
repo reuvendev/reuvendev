@@ -19,6 +19,6 @@ export const metadata = {
   title: "Reuven Jimenez — Portfolio",
   description: "BSIT student based in Baguio City, Philippines.",
   icons: {
-    icon: "https://cdn.reuvendev.site/file/reuvendev/Images/Icon/ic.png",
+    icon: "https://cdn.reuvendev.site/Images/Icon/ic.png",
   },
 };

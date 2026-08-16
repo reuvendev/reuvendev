@@ -153,7 +153,7 @@ export default function Home() {
             </div>
             <div className="pt-2">
               <a 
-                href="https://cdn.reuvendev.site/file/reuvendev/PDF/Projects/WaterWatch+Project+Document.pdf" 
+                href="https://cdn.reuvendev.site/PDF/Projects/WaterWatch+Project+Document.pdf" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-block w-full text-center font-mono text-xs text-cyan-400 hover:text-white border border-cyan-500/40 bg-cyan-950/30 hover:bg-cyan-900/50 py-2 rounded transition-colors"
