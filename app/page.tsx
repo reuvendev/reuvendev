@@ -1,3 +1,5 @@
+import { projects } from "@/data/projects";
+
 export default function Home() {
   return (
     <main className="max-w-4xl mx-auto px-6 py-12 space-y-16">
@@ -135,34 +137,40 @@ export default function Home() {
         </h2>
 
         <div className="grid md:grid-cols-2 gap-4">
-          
-          <div className="p-5 bg-white/5 border border-white/10 rounded-lg flex flex-col justify-between space-y-4 hover:border-cyan-500/50 transition-colors">
-            <div className="space-y-2">
-              <h3 className="text-xl font-bold text-white">WaterWatch – Smart Water Level Monitoring</h3>
-              <p className="text-sm text-cyan-400 font-mono">Status: Completed / Hardware</p>
-              <p className="text-gray-400 text-sm leading-relaxed pt-1">
-                Developed an automated water tank monitoring system with real-time level detection and automatic pump control.
-              </p>
-              <div className="flex flex-wrap gap-2 pt-2 font-mono text-xs">
-                <span className="px-2 py-1 bg-black/30 rounded text-gray-300">Arduino Uno</span>
-                <span className="px-2 py-1 bg-black/30 rounded text-gray-300">C++</span>
-                <span className="px-2 py-1 bg-black/30 rounded text-gray-300">HC-SR04</span>
-                <span className="px-2 py-1 bg-black/30 rounded text-gray-300">Relay</span>
-                <span className="px-2 py-1 bg-black/30 rounded text-gray-300">LCD I2C</span>
+          {projects.map((project, index) => (
+            <div 
+              key={index}
+              className="p-5 bg-white/5 border border-white/10 rounded-lg flex flex-col justify-between space-y-4 hover:border-cyan-500/50 transition-colors"
+            >
+              <div className="space-y-2">
+                <h3 className="text-xl font-bold text-white">{project.title}</h3>
+                <p className="text-sm text-cyan-400 font-mono">Status: {project.status}</p>
+                <p className="text-gray-400 text-sm leading-relaxed pt-1">
+                  {project.description}
+                </p>
+                <div className="flex flex-wrap gap-2 pt-2 font-mono text-xs">
+                  {project.tags.map((tag, tagIndex) => (
+                    <span key={tagIndex} className="px-2 py-1 bg-black/30 rounded text-gray-300">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
               </div>
-            </div>
-            <div className="pt-2">
-              <a 
-                href="https://cdn.reuvendev.site/PDF/Projects/WaterWatch+Project+Document.pdf" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-block w-full text-center font-mono text-xs text-cyan-400 hover:text-white border border-cyan-500/40 bg-cyan-950/30 hover:bg-cyan-900/50 py-2 rounded transition-colors"
-              >
-                [ View Project Document (.PDF) ]
-              </a>
-            </div>
-          </div>
 
+              {project.linkUrl && (
+                <div className="pt-2">
+                  <a 
+                    href={project.linkUrl} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-block w-full text-center font-mono text-xs text-cyan-400 hover:text-white border border-cyan-500/40 bg-cyan-950/30 hover:bg-cyan-900/50 py-2 rounded transition-colors"
+                  >
+                    {project.linkText || "[ View Project ]"}
+                  </a>
+                </div>
+              )}
+            </div>
+          ))}
         </div>
       </section>
 
