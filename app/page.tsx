@@ -133,7 +133,7 @@ export default function Home() {
         </div>
 
         <h2 className="text-4xl font-bold text-white tracking-tight">
-          Current <span className="text-accent-cyan">Projects</span>
+          Completed <span className="text-accent-cyan">Projects</span>
         </h2>
 
         <div className="grid md:grid-cols-2 gap-4">
