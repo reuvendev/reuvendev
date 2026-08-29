@@ -117,9 +117,30 @@ export default function Home() {
           </div>
 
           <div className="space-y-4 md:col-span-2">
-            <h3 className="text-red-500 border-b border-red-500/20 pb-2">05 // Community</h3>
-            <div className="flex flex-wrap gap-2">
-              <span className="px-2 py-1 bg-red-950/50 border border-red-500/30 rounded text-red-500">Member, Integrated Confederacy (ICON)</span>
+            <h3 className="text-red-500 font-mono text-sm tracking-wider uppercase border-b border-red-500/20 pb-2">
+              05 // Community
+            </h3>
+            
+            <div className="flex flex-wrap gap-3">
+              <div className="flex flex-col p-3 bg-red-950/40 hover:bg-red-950/70 border border-red-500/30 hover:border-red-500/60 rounded-md transition-all duration-200 shadow-sm min-w-[200px]">
+                <span className="text-red-200 text-sm font-semibold tracking-wide">
+                  SLU Integrated Confederacy (ICON)
+                </span>
+                <span className="text-red-500 text-xs font-mono mt-1 flex items-center gap-1.5">
+                  <span className="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse"></span>
+                  Member
+                </span>
+              </div>
+
+              <div className="flex flex-col p-3 bg-red-950/40 hover:bg-red-950/70 border border-red-500/30 hover:border-red-500/60 rounded-md transition-all duration-200 shadow-sm min-w-[200px]">
+                <span className="text-red-200 text-sm font-semibold tracking-wide">
+                  Google Developer Group Baguio
+                </span>
+                <span className="text-red-500 text-xs font-mono mt-1 flex items-center gap-1.5">
+                  <span className="w-1.5 h-1.5 rounded-full bg-red-500"></span>
+                  Member
+                </span>
+              </div>
             </div>
           </div>
 
