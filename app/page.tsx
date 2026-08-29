@@ -101,6 +101,7 @@ export default function Home() {
               <span className="px-2 py-1 bg-green-950/50 border border-green-500/30 rounded text-green-500">Git & GitHub</span>
               <span className="px-2 py-1 bg-green-950/50 border border-green-500/30 rounded text-green-500">Figma</span>
               <span className="px-2 py-1 bg-green-950/50 border border-green-500/30 rounded text-green-500">Vercel</span>
+              <span className="px-2 py-1 bg-green-950/50 border border-green-500/30 rounded text-green-500">Firebase</span>
             </div>
           </div>
 
