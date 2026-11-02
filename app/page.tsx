@@ -1,5 +1,20 @@
 import { projects } from "@/data/projects";
 
+const communityOrganizations = [
+  {
+    name: "SLU Integrated Confederacy (ICON)",
+    details: "Saint Louis University // Student Organization",
+  },
+  {
+    name: "Google Developer Group Baguio",
+    details: "Google Developer Community // Baguio City",
+  },
+  {
+    name: "SLU AWS Learning Club",
+    details: "Saint Louis University // Tech Community",
+  },
+];
+
 export default function Home() {
   return (
     <main className="max-w-4xl mx-auto px-6 py-12 space-y-16">
@@ -102,6 +117,7 @@ export default function Home() {
               <span className="px-2 py-1 bg-green-950/50 border border-green-500/30 rounded text-green-500">Figma</span>
               <span className="px-2 py-1 bg-green-950/50 border border-green-500/30 rounded text-green-500">Vercel</span>
               <span className="px-2 py-1 bg-green-950/50 border border-green-500/30 rounded text-green-500">Firebase</span>
+              <span className="px-2 py-1 bg-green-950/50 border border-green-500/30 rounded text-green-500">Cloudflare</span>
             </div>
           </div>
 
@@ -122,26 +138,24 @@ export default function Home() {
               05 // Community
             </h3>
             
-            <div className="flex flex-wrap gap-3">
-              <div className="flex flex-col p-3 bg-red-950/40 hover:bg-red-950/70 border border-red-500/30 hover:border-red-500/60 rounded-md transition-all duration-200 shadow-sm min-w-[200px]">
-                <span className="text-red-200 text-sm font-semibold tracking-wide">
-                  SLU Integrated Confederacy (ICON)
-                </span>
-                <span className="text-red-500 text-xs font-mono mt-1 flex items-center gap-1.5">
-                  <span className="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse"></span>
-                  Member
-                </span>
-              </div>
-
-              <div className="flex flex-col p-3 bg-red-950/40 hover:bg-red-950/70 border border-red-500/30 hover:border-red-500/60 rounded-md transition-all duration-200 shadow-sm min-w-[200px]">
-                <span className="text-red-200 text-sm font-semibold tracking-wide">
-                  Google Developer Group Baguio
-                </span>
-                <span className="text-red-500 text-xs font-mono mt-1 flex items-center gap-1.5">
-                  <span className="w-1.5 h-1.5 rounded-full bg-red-500"></span>
-                  Member
-                </span>
-              </div>
+            <div className="flex flex-col gap-3">
+              {communityOrganizations.map((organization) => (
+                <div
+                  key={organization.name}
+                  className="flex min-h-28 flex-col p-3 bg-cyan-950/40 hover:bg-cyan-950/70 border border-cyan-500/30 hover:border-cyan-500/60 rounded-md transition-all duration-200 shadow-sm"
+                >
+                  <span className="text-cyan-200 text-sm font-semibold tracking-wide">
+                    {organization.name}
+                  </span>
+                  <span className="text-gray-400 text-xs mt-1">
+                    {organization.details}
+                  </span>
+                  <span className="text-cyan-500 text-xs font-mono mt-auto pt-2 flex items-center gap-1.5">
+                    <span className="w-1.5 h-1.5 rounded-full bg-cyan-500"></span>
+                    Member
+                  </span>
+                </div>
+              ))}
             </div>
           </div>
 
