@@ -165,7 +165,15 @@ export default function Home() {
               className="p-5 bg-white/5 border border-white/10 rounded-lg flex flex-col justify-between space-y-4 hover:border-cyan-500/50 transition-colors"
             >
               <div className="space-y-2">
+                {project.eventLabel && (
+                  <p className="text-xs text-accent-blue font-mono uppercase tracking-wider">
+                    Hackathon Entry // {project.eventLabel}
+                  </p>
+                )}
                 <h3 className="text-xl font-bold text-white">{project.title}</h3>
+                {project.subtitle && (
+                  <p className="text-sm text-gray-300">{project.subtitle}</p>
+                )}
                 <p className="text-sm text-cyan-400 font-mono">Status: {project.status}</p>
                 <p className="text-gray-400 text-sm leading-relaxed pt-1">
                   {project.description}
@@ -193,6 +201,30 @@ export default function Home() {
               )}
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Hackathons & Experience Section */}
+      <section id="hackathons" className="space-y-8">
+        <div className="font-mono text-sm text-gray-500">
+          <span className="text-accent-cyan">$</span> cat ./hackathons.log
+        </div>
+
+        <h2 className="text-4xl font-bold text-white tracking-tight">
+          Hackathons &amp; <span className="text-accent-blue">Experience</span>
+        </h2>
+
+        <div className="p-5 bg-white/5 border border-white/10 rounded-lg hover:border-cyan-500/50 transition-colors">
+          <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3">
+            <div className="space-y-2">
+              <h3 className="text-lg font-bold text-white">PinaSIKLab Hackathon 2026</h3>
+              <p className="text-sm text-cyan-400 font-mono">Team Valiance // Participant</p>
+              <p className="text-sm text-gray-400 leading-relaxed max-w-2xl">
+                Developed NEGOSYO READY, an AI-assisted compliance prototype for micro and small businesses in Baguio City.
+              </p>
+            </div>
+            <span className="text-xs text-gray-400 font-mono whitespace-nowrap">October 2026</span>
+          </div>
         </div>
       </section>
 
