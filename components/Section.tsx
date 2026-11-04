@@ -1,4 +1,13 @@
-export default function Section({ id, command, title, children }: any) {
+import type { ReactNode } from "react";
+
+interface SectionProps {
+  id: string;
+  command: string;
+  title: ReactNode;
+  children: ReactNode;
+}
+
+export default function Section({ id, command, title, children }: SectionProps) {
   return (
     <section id={id} className="py-20">
       <p className="text-accent-teal font-mono text-sm mb-2">$ {command}</p>

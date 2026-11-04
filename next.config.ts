@@ -1,7 +1,17 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "cdn.reuvendev.site",
+        port: "",
+        pathname: "/Images/medias/**",
+        search: "",
+      },
+    ],
+  },
 };
 
 export default nextConfig;
