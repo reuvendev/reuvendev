@@ -28,7 +28,8 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         <div className="min-h-8">
           {project.eventLabel && (
             <p className="font-mono text-xs uppercase tracking-wider text-accent-blue">
-              Hackathon Entry // {project.eventLabel}
+              {project.isHackathonEntry && "Hackathon Entry // "}
+              {project.eventLabel}
             </p>
           )}
         </div>
